@@ -147,7 +147,7 @@ RUN jupyter nbextension enable hinterland/hinterland && \
     jupyter nbextension enable nbTranslate/main
 
 # enter ROS world
-RUN echo "source /opt/ros/$ROS_DISTRO/setup.bash" >> ~/.bashrc
+RUN echo "source /opt/ros/$ROS_DISTRO/setup.bash" >> ~/.bashrc && echo "source /tiago_public_ws/devel/setup.bash" >> ~/.bashrc 
 
 EXPOSE 3000 8888
 
