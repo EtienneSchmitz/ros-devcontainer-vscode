@@ -1,4 +1,4 @@
-ARG BASE_IMAGE=ros:melodic
+ARG BASE_IMAGE=palroboticssl/tiago_tutorials:melodic
 
 FROM maven AS xsdcache
 
